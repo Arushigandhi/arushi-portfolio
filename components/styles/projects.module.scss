@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     padding: 2rem;
+    margin-bottom: 5rem;
     .projImage {
       width: 110rem;
       height: auto;
@@ -24,20 +25,44 @@
         border-radius: 10px;
       }
     }
-    h2{
+    .projTextCOntroller{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      h2{
         font-family: "Mulish", sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin: 0;
-    // color: #FECACA;
-    }
-    p{
+        font-weight: 600;
+        font-size: 2.2rem;
+        margin: 0;
+        // color: #FECACA;
+      }
+      p{
         font-family: "Mulish", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    }
-    .projIcons{
         font-size: 1rem;
+        font-weight: 300;
+      }
+      .projIcons{
+        font-size: 1.5rem;
+
+        .ws{
+          color:#FECACA;
+          margin-right: 2rem;
+          cursor: pointer;
+        }
+        .yt{
+          color: #DDD6FE;
+          margin-right: 2rem;
+          cursor: pointer;
+
+        }
+        .gh{
+          color: #FDE68A;
+          margin-right: 2rem;
+          cursor: pointer;
+
+        }
+        
+      }
     }
   }
 }
