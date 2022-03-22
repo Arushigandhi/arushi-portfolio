@@ -1,49 +1,45 @@
-import HomeCard from "../components/HomeCard";
 import NavBar from "../components/NavBar";
-import Projects from "../components/Projects";
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
-import about from "../components/assets/about.jpg";
-
+import Link from "next/link";
+import Arushi from "./assets/about.jpg";
+import { AiOutlineLinkedin, AiFillInstagram } from "react-icons/ai";
+import { Button } from "antd";
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
-        <NavBar />
-        <HomeCard />
+      <NavBar />
 
-        {/* About Section */}
-        <div className={styles.aboutSection}>
-          <h1>About Me</h1>
-          <div className={styles.aboutController}>
-            <div className={styles.aboutImage}>
-              <Image src={about} alt='cute pic of me'/>
+      <div className={styles.aboutContainer}>
+        <div className={styles.aboutImage}>
+          <Image src={Arushi} alt="arushi" width={1800} height={1800} />
+        </div>
+        <div className={styles.aboutDescription}>
+          <h1>
+            Hey, I’m Arushi Gandhi and I am a developer focused on building
+            accessible, human-centered products.
+          </h1>
+          <h2>
+            I am a sophomore at MIT, Manipal majoring in Information Technology.
+            My interests in tech are centered around Application and Web
+            Development and any tool that equips me with the ability to create
+            impactful solutions. I write too! and talk! A LOT. I`m a feminist
+            through and through and believe in channeling tech for the cause.
+          </h2>
+          <div className={styles.aboutIcons}>
+            <div className={styles.controller}>
+              <Link href="/">
+                <AiOutlineLinkedin className={styles.link} />
+              </Link>
+              <Link href="/">
+                <AiFillInstagram className={styles.link} />
+              </Link>
             </div>
-              <p>
-                I am a sophomore at MIT, Manipal majoring in Information
-                Technology. My interests in tech are centered around 
-                <span> Application and Web Development</span> and any tool that equips me with the
-                ability to create impactful solutions. I write too! and talk! A
-                LOT. I`m a feminist through and through and find the purpose in the cause (bleh)
-                <br/>
-                <div className={styles.skills}>Skills</div>
-                <div className={styles.skillsController}>
-                  <h6>HTML</h6>
-                  <h6>CSS</h6>
-                  <h6>Javascript</h6>
-                  <h6>React</h6>
-                  <h6>Next</h6>
-                  <h6>Redux</h6>
-                  <h6>Ionic</h6>
-                  <h6>C++</h6>
-                  <h6>Java</h6>
-                  <h6>Python</h6>
-
-                </div>
-              </p>
+            <div className={styles.controller}>
+                <Button className={styles.btn}>Resume</Button>
+            </div>
           </div>
         </div>
-      <Projects/>
       </div>
     </>
   );

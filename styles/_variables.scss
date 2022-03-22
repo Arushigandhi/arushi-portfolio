@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$ag-pink: #FECACA;
+$ag-blue: #DEEDFF;
+$ag-purple: #E7E2FF;
+$ag-pink-text: #FF8596;
+$ag-blue-text: #257CE4;
+$ag-purple-text: #9E89FF;
+$dark-text:#535353;
+
+
+
+//MEDIA QUERY ENDPOINTS
+@mixin responsive($breakpoint) {
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1780px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==laptop2 {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==laptop1 {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet4 {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet3 {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet2 {
+    @media only screen and (max-width: 640px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet1 {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile4 {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile3 {
+    @media only screen and (max-width: 420px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile2 {
+    @media only screen and (max-width: 376px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile1 {
+    @media only screen and (max-width: 320px) {
+      @content;
+    }
+  }
+}
+
+$fontSize: 0.8rem, 0.9rem, 1rem, 1.2rem, 1.4rem, 1.8rem, 2rem, 2.4rem, 2.8rem,
+  3rem, 3.2rem, 3.8rem, 4rem, 5rem;

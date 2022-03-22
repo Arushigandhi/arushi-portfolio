@@ -1,20 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import styles from "./styles/navbar.module.scss";
-import Arushi from "./assets/arushi.svg"
-import Resume from "./assets/Resume.png"
-import { Button } from "antd";
-import { HiOutlineDownload } from "react-icons/hi";
+import Arushi from "./assets/ARUSHI.svg";
+import styles from "../styles/navbar.module.scss";
+
 
 export default function NavBar() {
   return (
     <div className={styles.navContainer}>
-        <Image src={Arushi} alt="arushi" width={25}/>
-        {/* <Button className={styles.navBtn}> Resume</Button> */}
-        <div className={styles.navImage}>
-        <Image src={Resume} alt="resume"/>
-        </div>
+      <div>
+        <Image src={Arushi} alt="arushi" width={40} />
+      </div>
+      <div className={styles.navMenu}>
+        <Link href="#projects">Projects</Link>
+        <Link href="#work">Work</Link>
+        <Link href="#blog">Blog</Link>
+      </div>
     </div>
   );
 }

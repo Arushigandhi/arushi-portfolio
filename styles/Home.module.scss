@@ -1,74 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "./variables";
 
-.container {
-  padding: 9rem;
-  min-height: 100vh;
-  z-index: -1;
-  margin: auto;
+.aboutContainer {
+  width: 70%;
+  margin: 5rem auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  .aboutSection{
-    width: 85%;
-    margin: auto;
-    h1{
-      font-family: "Mulish", sans-serif;
-    font-weight: 600;
-    font-size: 3.2rem;
-    // margin: 0 0 2rem;
-    text-align: center;
-
+  flex-direction: row;
+  .aboutImage {
+    margin-right: 4rem;
+    img {
+      border-radius: 6px;
     }
-    .aboutController{
+  }
+
+  .aboutDescription {
+    color: $dark-text;
+    h1 {
+      font-weight: 400;
+      font-size: nth($fontSize, 6);
+    }
+    h2 {
+      font-weight: 300;
+      font-size: nth($fontSize, 4);
+    }
+    .aboutIcons {
+      font-size: nth($fontSize, 8);
+      color: $ag-pink;
       display: flex;
-      flex-direction: row;   
-      justify-content: space-between;   
-      .aboutImage{
-        width: 100rem;
-        height: auto;
-        margin-right: 2rem;
-        img{
-          border-radius: 50%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .controller {
+        align-items: center;
+        .link {
+          margin-right: 2rem;
         }
-      }
-      p{
-        
-          font-family: "Mulish", sans-serif;
-          font-size: 1.2rem;
-          font-weight: 300;
-          margin-left: 2rem;
-          span{
-            color: rgba(191, 219, 254, 1);
-            font-weight: 600;
-          }
-          .skills{
-            padding-top: 2rem;
-            color: rgba(191, 219, 254, 1);
-            font-weight: 600;
-          font-size: 2.2rem;
+        .btn {
+          font-size: nth($fontSize, 4);
+          background-color: transparent;
+          border: 2.5px solid $ag-pink;
+          border-radius: 6px;
+          color: $ag-pink;
+          padding: 0.25rem 0.75rem;
         }
-          .skillsController{
-            // margin: 1.5rem 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            h6{
-              font-size: 1.2rem;
-              margin: 1rem 0;
-              margin-right:4rem;
-
-              padding: 0.2rem 0;
-              transition: 0.2s all ease-in-out;
-              &:hover{
-                border-bottom: 2.2px solid rgba(191, 219, 254, 1);
-                padding: 0;
-              }
-            }
-          }
-
-      
-        
       }
     }
   }
