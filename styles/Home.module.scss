@@ -23,6 +23,7 @@
       font-size: nth($fontSize, 4);
     }
     .aboutIcons {
+      padding-right: 2rem;
       font-size: nth($fontSize, 8);
       color: $ag-pink;
       display: flex;
@@ -30,6 +31,7 @@
       justify-content: space-between;
       align-items: center;
       .controller {
+        display: flex;
         align-items: center;
         .link {
           margin-right: 2rem;
@@ -40,7 +42,7 @@
           border: 2.5px solid $ag-pink;
           border-radius: 6px;
           color: $ag-pink;
-          padding: 0.25rem 0.75rem;
+          padding: 0.2rem 0.75rem;
         }
       }
     }
