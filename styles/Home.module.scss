@@ -5,8 +5,9 @@
   margin: 5rem auto;
   display: flex;
   flex-direction: row;
+  height: 75vh;
   .aboutImage {
-    margin-right: 4rem;
+    margin-right: 5rem;
     img {
       border-radius: 6px;
     }
@@ -46,5 +47,25 @@
         }
       }
     }
+  }
+}
+
+.projContainer{
+  width: 75%;
+  margin: auto;
+  h1{
+    font-size: nth($fontSize, 9);
+    font-weight: 500;
+    color: $dark-text;
+  }
+}
+
+.workContainer{
+  width: 75%;
+  margin: auto;
+  h1{
+    font-size: nth($fontSize, 9);
+    font-weight: 500;
+    color: $dark-text;
   }
 }

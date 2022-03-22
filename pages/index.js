@@ -5,6 +5,7 @@ import Link from "next/link";
 import Arushi from "./assets/about.jpg";
 import { AiOutlineLinkedin, AiFillInstagram } from "react-icons/ai";
 import { Button } from "antd";
+import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   return (
     <>
@@ -41,6 +42,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* <div className={styles.projContainer}>
+        <h1>Projects</h1>
+        <ProjectCard/>
+      </div>
+
+      <div className={styles.workContainer}>
+        <h1>Work Experience</h1>
+      </div> */}
     </>
   );
 }
