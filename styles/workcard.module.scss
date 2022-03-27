@@ -1,0 +1,41 @@
+@import "./variables";
+
+.workCard {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 4rem 0;
+  .workCardImage {
+    width: 3.2rem;
+    border-radius: 6px;
+    height: 3.2rem;
+  }
+  .workCardController {
+    width: 85%;
+    margin-left: 2rem;
+    margin-top: -0.4rem;
+
+    .cardHeading {
+      font-size: nth($fontSize, 6);
+      font-weight: 600;
+      color: $dark-text;
+      margin: 0;
+      &:hover{
+        color: black;
+
+      }
+    }
+    .cardDate {
+      font-size: nth($fontSize, 3);
+      font-weight: 600;
+      color: $dark-text;
+      margin: 0;
+    }
+    .cardDescription {
+      font-size: nth($fontSize, 3);
+      font-weight: 400;
+      color: $dark-text;
+    }
+  }
+}

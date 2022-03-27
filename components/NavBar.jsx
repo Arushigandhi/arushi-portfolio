@@ -12,9 +12,9 @@ export default function NavBar() {
         <Image src={Arushi} alt="arushi" width={40} />
       </div>
       <div className={styles.navMenu}>
-        <Link href="/">Projects</Link>
-        <Link href="/">Work</Link>
-        <Link href="/">Blog</Link>
+        <Link href="#projects">Projects</Link>
+        <Link href="#work">Work</Link>
+        <Link href="https://thesilentgeeks.com/">Blog</Link>
       </div>
     </div>
   );

@@ -16,6 +16,7 @@
   .aboutDescription {
     color: $dark-text;
     h1 {
+      margin-top: 0;
       font-weight: 400;
       font-size: nth($fontSize, 6);
     }
@@ -57,6 +58,12 @@
     font-size: nth($fontSize, 9);
     font-weight: 500;
     color: $dark-text;
+    margin-bottom: 7rem;
+  }
+  .projCardController{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -67,5 +74,6 @@
     font-size: nth($fontSize, 9);
     font-weight: 500;
     color: $dark-text;
+    margin: 7rem 0;
   }
 }
