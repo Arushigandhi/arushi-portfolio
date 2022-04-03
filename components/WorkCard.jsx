@@ -22,7 +22,7 @@ function WorkCard({
         <h2 className={styles.cardDate} style={{ color: textColorProps }}>
           {date}
         </h2>
-        <p className={styles.cardDescription}>{description}</p>
+        <p className={styles.cardDescription} dangerouslySetInnerHTML={{__html: description}}></p>
       </div>
     </div>
         </Link>

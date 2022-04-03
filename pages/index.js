@@ -80,8 +80,7 @@ export default function Home() {
           title={"Fiedra"}
           date={"Web Developer (Oct 2021 - Jan 2022)"}
           description={
-            "The first, consolidated bug bounty platform in India, BugBase is a student run startup that provides a SaaS platform to companies for to host their bug bounties, be it public or private. Companies can list down their application for a bug bounty, and a stream of hackers would be going through rigorous tests to find a bug in the platform, for a certain reward."
-          }
+            "Fiedra is a social networking platform, for long-form content. Fiedra allows writers to post blog content on their website, have a following, reach a wide network through their writing and also, follow other writers and topics. I worked on developing the web application akin to the iOS app they already had, using <b>Next.js</b>, <b>Redux</b> and <b>Parse Server</b> for a duration of three months." }
           link={"https://fiedra.com/"}
         />
         <WorkCard
@@ -113,8 +112,12 @@ export default function Home() {
           <div className={styles.clubTextController}>
             <h1 className={styles.clubHeading}>GirlScript Manipal</h1>
             <p className={styles.clubDescription}>
-              The first, consolidated bug bounty platform in India, BugBase is a
-              student run startup that provides a SaaS platform to companies for
+              We co-founded Girlscript Manipal with the aim to broaden diversity
+              in tech and bring value to inclusion. As a team, we understoof the
+              barriers and intimidation that stood between wanting to learn a
+              skill and mastering it. As the development lead, I`ve successfully
+              conducted workshops, domain bootcamps and mentorship programs in
+              the field of webdev.
             </p>
             <div className={styles.controller}>
               <Link href="/">
@@ -128,10 +131,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.awards}>
+      {/* <div className={styles.awards}>
         <h3 className={styles.awardsHeading}>
-          I am also an avid avid debater, love talking and formal forms of
-          argumentation! Here are some of my debating achievements :)
+          We co-founded Girlscript Manipal with the aim to broaden diversity in
+          tech and bring value to inclusion. As a team, we understoof the
+          barriers and intimidation that stood between wanting to learn a skill
+          and mastering it. As the development lead, I`ve successfully conducted
+          workshops, domain bootcamps and mentorship programs in the field of
+          webdev.
         </h3>
         <div className={styles.awardsController}>
           <div>
@@ -149,7 +156,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
