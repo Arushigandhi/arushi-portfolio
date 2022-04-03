@@ -80,7 +80,7 @@ export default function Home() {
           title={"Fiedra"}
           date={"Web Developer (Oct 2021 - Jan 2022)"}
           description={
-            "Fiedra is a social networking platform, for long-form content. Fiedra allows writers to post blog content on their website, have a following, reach a wide network through their writing and also, follow other writers and topics. I worked on developing the web application akin to the iOS app they already had, using <b>Next.js</b>, <b>Redux</b> and <b>Parse Server</b> for a duration of three months." }
+            "Fiedra is a social networking platform, for long-form content. Fiedra allows writers to post blog content on their website and reach a wide network through their writing. I worked on developing the web application akin to the iOS app they already had, using <b>Next.js</b>, <b>Redux</b> and <b>Parse Server</b> for a duration of three months." }
           link={"https://fiedra.com/"}
         />
         <WorkCard
