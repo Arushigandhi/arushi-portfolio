@@ -12,20 +12,25 @@ function WorkCard({
 }) {
   return (
     <Link href={link}>
-    <div className={styles.workCard}>
-      <div
-        className={styles.workCardImage}
-        style={{ backgroundColor: colorProps }}
-        ></div>
-      <div className={styles.workCardController}>
-        <h1 className={styles.cardHeading}>{title}</h1>
-        <h2 className={styles.cardDate} style={{ color: textColorProps }}>
-          {date}
-        </h2>
-        <p className={styles.cardDescription} dangerouslySetInnerHTML={{__html: description}}></p>
-      </div>
-    </div>
-        </Link>
+      <a target="_blank">
+        <div className={styles.workCard}>
+          <div
+            className={styles.workCardImage}
+            style={{ backgroundColor: colorProps }}
+          ></div>
+          <div className={styles.workCardController}>
+            <h1 className={styles.cardHeading}>{title}</h1>
+            <h2 className={styles.cardDate} style={{ color: textColorProps }}>
+              {date}
+            </h2>
+            <p
+              className={styles.cardDescription}
+              dangerouslySetInnerHTML={{ __html: description }}
+            ></p>
+          </div>
+        </div>
+      </a>
+    </Link>
   );
 }
 

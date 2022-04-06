@@ -1,17 +1,17 @@
 @import "./variables";
 
-.navContainer {
+.footContainer {
   position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1rem 5rem;
   // border-bottom: 1px solid #CECECE;
   box-shadow: 0 4px 30px rgb(0 0 0 / 8%);
 
-  .navMenu{
+  .footMenu{
     font-family: 'League Gothic', sans-serif;
-    font-size: nth($fontSize, 7);
+    font-size: nth($fontSize, 5);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,6 +21,23 @@
       margin: 0 2rem;
       letter-spacing: 0.065em;
       color: $dark-text;
+      cursor: pointer;
+
+    }
+    h1{
+      font-weight: 400;
+      letter-spacing: 0.065em;
+      color: $dark-text;
+    font-size: nth($fontSize, 5);
+    cursor: pointer;
+    
+
+    }
+    .link{
+      color: $dark-text;
+      font-size: nth($fontSize, 5);
+      margin-left: 2.2em;
+      cursor: pointer;
 
     }
   }

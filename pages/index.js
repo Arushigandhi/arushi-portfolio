@@ -7,6 +7,7 @@ import { AiOutlineLinkedin, AiFillInstagram } from "react-icons/ai";
 import { Button, Card } from "antd";
 import ProjectCard from "../components/ProjectCard";
 import WorkCard from "../components/WorkCard";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -31,10 +32,10 @@ export default function Home() {
           </h2>
           <div className={styles.aboutIcons}>
             <div className={styles.controller}>
-              <Link href="/">
+              <Link href="https://in.linkedin.com/in/arushi-gandhi">
                 <AiOutlineLinkedin className={styles.link} />
               </Link>
-              <Link href="/">
+              <Link href="https://www.instagram.com/arushi.gandhi/">
                 <AiFillInstagram className={styles.link} />
               </Link>
             </div>
@@ -59,7 +60,7 @@ export default function Home() {
             colorProps={"#FFD9DE"}
             textColorProps={"#FF8596"}
             title={"SexEdify"}
-            description={"The ultimate safe-haven for sex-education"}
+            description={"A haven for safe learning and conversation about sex-ed"}
             link={"https://indusby.netlify.app/"}
           />
           <ProjectCard
@@ -78,35 +79,36 @@ export default function Home() {
           colorProps={"#E7E2FF"}
           textColorProps={"#9E89FF"}
           title={"Fiedra"}
-          date={"Web Developer (Oct 2021 - Jan 2022)"}
+          date={"Web Development Intern (Oct 2021 - Jan 2022)"}
           description={
-            "Fiedra is a social networking platform, for long-form content. Fiedra allows writers to post blog content on their website and reach a wide network through their writing. I worked on developing the web application akin to the iOS app they already had, using <b>Next.js</b>, <b>Redux</b> and <b>Parse Server</b> for a duration of three months." }
+            "Fiedra is a social networking platform, for long-form content. Fiedra allows writers to post blog content on their website, follow other writers and reach a wide network through their writing. I worked on developing the web application akin to the deployed iOS app, using <b>Next.js</b>, <b>Redux</b> and <b>Parse Server</b> for a duration of three months."
+          }
           link={"https://fiedra.com/"}
         />
         <WorkCard
           colorProps={"#FFD9DE"}
           textColorProps={"#FF8596"}
           title={"Incepthink"}
-          date={"Web Developer (Oct 2021 - Jan 2022)"}
+          date={"Web Development Intern (Feb 2022 - Ongoing)"}
           description={
-            "The first, consolidated bug bounty platform in India, BugBase is a student run startup that provides a SaaS platform to companies for to host their bug bounties, be it public or private. Companies can list down their application for a bug bounty, and a stream of hackers would be going through rigorous tests to find a bug in the platform, for a certain reward."
+            "Incepthink works towards redefining the limits of blockchain to add utility to the world of NFTs through exisiting and upcoming projects. I worked on contributing to different projects under the Incepthink umbrella and developed the company website which has an integrated <b>NFT Minter</b> and blogs, using <b>Next.js</b>, <b>Ethers.js</b>, <b>IPFS</b> and <b>Ghost Content API</b>."
           }
-          link={"https://https://www.incepthink.com/"}
+          link={"https://www.incepthink.com/"}
         />
         <WorkCard
           colorProps={"#DEEDFF"}
           textColorProps={"#257CE4"}
           title={"BugBase"}
-          date={"Web Developer (Oct 2021 - Jan 2022)"}
+          date={"Project Manager (Dec 2021 - Ongoing)"}
           description={
-            "The first, consolidated bug bounty platform in India, BugBase is a student run startup that provides a SaaS platform to companies for to host their bug bounties, be it public or private. Companies can list down their application for a bug bounty, and a stream of hackers would be going through rigorous tests to find a bug in the platform, for a certain reward."
+            "BugBase is a managed marketplace of ethical hackers which facilitates startups and enterprises to setup bug bounty programs. I am responsible for the day-to-day functioning of the various departments in the company and efficient communication between them. I have also contributed towards migrating the codebase from <b>React</b> to <b>Next.js</b>."
           }
           link={"https://bugbase.in/"}
         />
       </div>
 
-      <div className={styles.clubContainer}>
-        <h1>Student-lead Clubs</h1>
+      {/* <div className={styles.clubContainer}>
+        <h1>Positions of Responsibilities</h1>
         <div className={styles.clubCard}>
           <div className={styles.clubImage}></div>
           <div className={styles.clubTextController}>
@@ -129,7 +131,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className={styles.awards}>
         <h3 className={styles.awardsHeading}>
@@ -157,6 +159,7 @@ export default function Home() {
           </div>
         </div>
       </div> */}
+      <Footer/>
     </>
   );
 }

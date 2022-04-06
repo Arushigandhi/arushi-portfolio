@@ -14,7 +14,9 @@ export default function NavBar() {
       <div className={styles.navMenu}>
         <Link href="#projects">Projects</Link>
         <Link href="#work">Work</Link>
-        <Link href="https://thesilentgeeks.com/">Blog</Link>
+        <Link href="https://thesilentgeeks.com/">
+          <a target="_blank">Blog</a>
+        </Link>
       </div>
     </div>
   );
