@@ -1,0 +1,98 @@
+@import "./variables";
+
+.projContainer {
+  h1 {
+    font-size: nth($fontSize, 7);
+    font-weight: 600;
+    color: $dark-text;
+    margin: 0;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .divider {
+    width: 5rem;
+    height: 5px;
+    background-color: $ag-purple;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+  .iframeWrapper {
+    position: relative;
+    width: 60%;
+    padding-top: 56.25%;
+    padding-bottom: 0;
+    box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+    margin: 0 auto;
+    margin-top: 3rem;
+    overflow: hidden;
+    border-radius: 8px;
+    will-change: transform;
+    .iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .iframeLink {
+    margin: 1rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: nth($fontSize, 3);
+    color: $ag-purple-text;
+  }
+
+  .about {
+    width: 60%;
+    margin: 10rem auto;
+    .aboutController {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      p {
+        font-size: nth($fontSize, 4);
+        font-weight: 400;
+        color: $dark-text;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .imageWrapper {
+        width: 18rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+        }
+      }
+    }
+  }
+  .aboutIcons {
+    font-size: nth($fontSize, 4);
+    color: $ag-purple-text;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 5rem;
+    margin-top: -4rem;
+    .link {
+      padding-bottom: 2px;
+
+      &:hover {
+        padding-bottom: 0;
+        border-bottom: 1.4px solid $ag-purple-text;
+      }
+    }
+  }
+}

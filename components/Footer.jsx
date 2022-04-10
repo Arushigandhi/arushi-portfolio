@@ -1,6 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import { AiOutlineLinkedin, AiFillInstagram } from "react-icons/ai";
+import {
+  AiOutlineLinkedin,
+  AiFillInstagram,
+  AiOutlineGithub,
+} from "react-icons/ai";
 import styles from "../styles/footer.module.scss";
 
 export default function Footer() {
@@ -9,10 +13,19 @@ export default function Footer() {
       <div className={styles.footMenu}>
         <h1>Mail me: Arushi.gandhi@gmail.com</h1>
         <Link href="https://in.linkedin.com/in/arushi-gandhi">
-          <AiOutlineLinkedin className={styles.link} />
+          {/* <a target="_blank"> */}
+          <AiOutlineLinkedin className={styles.link}/>
+          {/* </a> */}
         </Link>
         <Link href="https://www.instagram.com/arushi.gandhi/">
-          <AiFillInstagram className={styles.link} />
+          {/* <a target="_blank"> */}
+          <AiFillInstagram className={styles.link}/>
+          {/* </a> */}
+        </Link>
+        <Link href="https://www.instagram.com/arushi.gandhi/">
+          {/* <a target="_blank"> */}
+          <AiOutlineGithub className={styles.link}/>
+          {/* </a> */}
         </Link>
       </div>
       <div className={styles.footMenu}>

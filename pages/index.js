@@ -8,6 +8,10 @@ import { Button, Card } from "antd";
 import ProjectCard from "../components/ProjectCard";
 import WorkCard from "../components/WorkCard";
 import Footer from "../components/Footer";
+import Indusby from "./assets/projects/indusby.svg";
+import Svayam from "./assets/projects/svayam.svg";
+import Sexedify from "./assets/projects/sexedify.svg";
+
 
 export default function Home() {
   return (
@@ -21,27 +25,48 @@ export default function Home() {
         <div className={styles.aboutDescription}>
           <h1>
             Hey, I’m Arushi Gandhi and I am a developer focused on building
-            accessible, human-centered products.
+            accessible, human centered products.
           </h1>
           <h2>
             I am a sophomore at MIT, Manipal majoring in Information Technology.
-            My interests in tech are centered around Application and Web
+            Recipient of the <b>Google Generation Scholarship (APAC) 2022</b>,
+            my interests in tech are centered around Application and Web
             Development and any tool that equips me with the ability to create
-            impactful solutions. I write too! and talk! A LOT. I`m a feminist
-            through and through and believe in channeling tech for the cause.
+            impactful solutions. I`m a feminist through and through and believe
+            in channeling tech for the cause.
           </h2>
           <div className={styles.aboutIcons}>
-            <div className={styles.controller}>
-              <Link href="https://in.linkedin.com/in/arushi-gandhi">
-                <AiOutlineLinkedin className={styles.link} />
-              </Link>
-              <Link href="https://www.instagram.com/arushi.gandhi/">
-                <AiFillInstagram className={styles.link} />
-              </Link>
-            </div>
-            <div className={styles.controller}>
-              <Button className={styles.btn}>Resume</Button>
-            </div>
+            <Link
+              href="https://in.linkedin.com/in/arushi-gandhi"
+            >
+              <a target="_blank">
+              <span className={styles.link}>LinkedIn</span>
+              </a>
+            </Link>
+            <Link
+              href="https://www.instagram.com/arushi.gandhi/"
+            >
+              <a target="_blank">
+
+              <span className={styles.link}>Instagram</span>
+              </a>
+            </Link>
+            <Link
+              href="https://github.com/Arushigandhi"
+            >
+              <a target="_blank">
+
+              <span className={styles.link}>GitHub</span>
+              </a>
+            </Link>
+            <Link
+              href="/resume.pdf"
+            >
+              <a target="_blank">
+
+              <span className={styles.link}>Resume</span>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -54,21 +79,26 @@ export default function Home() {
             textColorProps={"#9E89FF"}
             title={"Indusby"}
             description={"A portal to enable reuse of Industrial by-products"}
-            link={"https://sexedify.co/"}
-          />
+            link={"/indusby"}
+            // image={Sexedify}
+            />
           <ProjectCard
             colorProps={"#FFD9DE"}
             textColorProps={"#FF8596"}
             title={"SexEdify"}
-            description={"A haven for safe learning and conversation about sex-ed"}
-            link={"https://indusby.netlify.app/"}
+            description={
+              "A haven for safe learning and conversation about sex-ed"
+            }
+            link={"/sexedify"}
+            // image={Indusby}
           />
           <ProjectCard
             colorProps={"#DEEDFF"}
             textColorProps={"#257CE4"}
             title={"Svayam"}
             description={"An ecommerce portal for Self-help groups."}
-            link={"https://svayam.vercel.app/"}
+            link={"/svayam"}
+            // image={Svayam}
           />
         </div>
       </div>
@@ -79,7 +109,7 @@ export default function Home() {
           colorProps={"#E7E2FF"}
           textColorProps={"#9E89FF"}
           title={"Fiedra"}
-          date={"Web Development Intern (Oct 2021 - Jan 2022)"}
+          date={"Frontend Development Intern (Oct 2021 - Jan 2022)"}
           description={
             "Fiedra is a social networking platform, for long-form content. Fiedra allows writers to post blog content on their website, follow other writers and reach a wide network through their writing. I worked on developing the web application akin to the deployed iOS app, using <b>Next.js</b>, <b>Redux</b> and <b>Parse Server</b> for a duration of three months."
           }
@@ -159,7 +189,7 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      <Footer/>
+      <Footer />
     </>
   );
 }

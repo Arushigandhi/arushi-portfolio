@@ -8,9 +8,13 @@
   padding: 2rem;
   margin: 0 0.5rem;
   .projectCardImage {
-    width: 5rem;
+    width: 3rem;
     border-radius: 6px;
-    height: 5rem;
+    height: 3rem;
+    padding: 1rem;
+    img {
+      margin: 1rem;
+    }
   }
   .cardHeading {
     font-size: nth($fontSize, 5);

@@ -5,42 +5,37 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 5rem;
+  padding: 0.4rem 5rem;
   // border-bottom: 1px solid #CECECE;
   box-shadow: 0 4px 30px rgb(0 0 0 / 8%);
 
-  .footMenu{
-    font-family: 'League Gothic', sans-serif;
+  .footMenu {
+    font-family: "League Gothic", sans-serif;
     font-size: nth($fontSize, 5);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    a{
+    a {
       width: 100%;
-      margin: 0 2rem;
+      margin: 0;
       letter-spacing: 0.065em;
       color: $dark-text;
       cursor: pointer;
-
+      margin: 0 2rem;
     }
-    h1{
+    h1 {
       font-weight: 400;
       letter-spacing: 0.065em;
       color: $dark-text;
-    font-size: nth($fontSize, 5);
-    cursor: pointer;
-    
-
+      font-size: nth($fontSize, 5);
+      cursor: pointer;
     }
-    .link{
+    .link {
       color: $dark-text;
       font-size: nth($fontSize, 5);
-      margin-left: 2.2em;
       cursor: pointer;
-
+      margin-left:2rem;
     }
   }
-
 }
-
