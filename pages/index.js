@@ -11,6 +11,9 @@ import Footer from "../components/Footer";
 import Indusby from "./assets/projects/indusby.svg";
 import Svayam from "./assets/projects/svayam.svg";
 import Sexedify from "./assets/projects/sexedify.svg";
+import one from "./assets/travel/andaman.png";
+import two from "./assets/travel/greece.png";
+import three from "./assets/travel/switzerland.png";
 
 
 export default function Home() {
@@ -189,6 +192,14 @@ export default function Home() {
           </div>
         </div>
       </div> */}
+      <div className={styles.travel}>
+        <h1>To someday having more in this section than 100vw can fit :)</h1>
+        <div className={styles.travelIcons}>
+          <div className={styles.travelImageWrapper}><Image src={one} /><h6>Andaman</h6></div>
+          <div className={styles.travelImageWrapper}><Image src={two}/><h6>Greece</h6></div>
+          <div className={styles.travelImageWrapper}><Image src={three}/><h6>Switzerland</h6></div>
+        </div>
+      </div>
       <Footer />
     </>
   );
