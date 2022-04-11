@@ -7,7 +7,6 @@ import styles from "../styles/sexedify.module.scss";
 import Sexedify from "./assets/projects/sexedifyFigma.png";
 import Footer from "../components/Footer";
 
-
 export default function sexedify() {
   return (
     <>
@@ -32,13 +31,13 @@ export default function sexedify() {
           </div>
           <div className={styles.aboutController}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              SexEdify is a portal to enable teenagers and young adults to have
+              a safe space on the internet to learn more about the natural
+              processes of growing up without any discomfort or stigma.
+              <br />
+              <br />
+              We developed this portal for the NIT-R Hackathon in 36 hours using
+              React and GraphQL and came in first overall.
             </p>
             <div className={styles.imageWrapper}>
               <Image src={Sexedify} alt="" />
@@ -72,7 +71,7 @@ export default function sexedify() {
           </p>
         </div> */}
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

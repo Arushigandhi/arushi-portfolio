@@ -58,7 +58,7 @@
       flex-direction: row;
       justify-content: space-between;
       p {
-        font-size: nth($fontSize, 4);
+        font-size: nth($fontSize, 3);
         font-weight: 400;
         color: $dark-text;
         width: 50%;
@@ -73,6 +73,7 @@
         flex-direction: column;
         justify-content: center;
         img {
+          border-radius: 10px;
         }
       }
     }

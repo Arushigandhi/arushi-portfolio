@@ -15,7 +15,7 @@ export default function svayam() {
         <h1>Svayam</h1>
         <Divider className={styles.divider} />
         <iframe
-        className={styles.iframe}
+          className={styles.iframe}
           width="950"
           height="534"
           src="https://www.youtube.com/embed/maI5PTvtnmY"
@@ -31,13 +31,13 @@ export default function svayam() {
           </div>
           <div className={styles.aboutController}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Svayam is an ecommerce platform aimed at helping self-help groups
+              sell their products online. It facilitates an easy and transparent
+              process and provides SHGs with the ability to incubate additional
+              members.
+              <br/>
+              <br/>
+              We used Nextjs, Nodejs, Express, MongoDB, Mongoose, RazorpayAPI, IPFS to create this application.
             </p>
             <div className={styles.imageWrapper}>
               <Image src={Svayam} alt="" />

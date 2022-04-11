@@ -24,7 +24,7 @@ export default function svayam() {
           ></iframe>
         </div>
         <a
-        className={styles.iframeLink}
+          className={styles.iframeLink}
           href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEwbTpVAaM&#x2F;view?utm_content=DAEwbTpVAaM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
           target="_blank"
           rel="noreferrer"
@@ -38,13 +38,14 @@ export default function svayam() {
           </div>
           <div className={styles.aboutController}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Indusby is an app that facilitates the direct usage of industrial
+              by-products that get generated in tremendous quantities, so much
+              so thatent/contractors can then acquire and make use of.
+              <br />
+              <br />
+              We developed this project in a span of 24 hours using{" "}
+              Ionic, React and Firebase for the Grand Challenge
+              hackathon.
             </p>
             <div className={styles.imageWrapper}>
               <Image src={Indusby} alt="" />
