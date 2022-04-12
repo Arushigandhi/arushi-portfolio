@@ -8,6 +8,10 @@
     margin: 0;
     margin-top: 3rem;
     text-align: center;
+    @include responsive(tablet4) {
+      margin-top: 3rem;
+      font-size: nth($fontSize, 5);
+    }
   }
   .divider {
     width: 5rem;
@@ -45,16 +49,28 @@
     justify-content: center;
     font-size: nth($fontSize, 3);
     color: $ag-purple-text;
+    @include responsive(tablet4) {
+      font-size: nth($fontSize,2);
+    }
   }
 
   .about {
     width: 60%;
     margin: 10rem auto;
+    @include responsive(tablet4) {
+      margin: 0rem auto;
+    width: 80%;
+
+    }
     .aboutController {
       margin-top: 2rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      @include responsive(tablet4) {
+      flex-direction: column;
+
+      }
       p {
         font-size: nth($fontSize, 3);
         font-weight: 400;
@@ -63,6 +79,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include responsive(tablet4) {
+          width: 100%;
+        font-size: nth($fontSize, 2);
+
+        }
       }
       .imageWrapper {
         width: 28rem;
@@ -72,6 +93,10 @@
         justify-content: center;
         img {
           border-radius: 10px;
+        }
+        @include responsive(tablet4) {
+          width: 12rem;
+          margin: 2rem auto;
         }
       }
     }
@@ -87,6 +112,12 @@
     width: 60%;
     margin-bottom: 5rem;
     margin-top: -4rem;
+    @include responsive(tablet4) {
+      margin-top: 2rem;
+      font-size: nth($fontSize, 2);
+    width: 100%;
+
+    }
     .link {
       padding-bottom: 2px;
 
