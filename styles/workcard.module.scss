@@ -10,6 +10,13 @@
     width: 3.2rem;
     border-radius: 6px;
     height: 3.2rem;
+    @include responsive(tablet4) {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 4px;
+
+      }
+    
   }
   .workCardController {
     width: 85%;

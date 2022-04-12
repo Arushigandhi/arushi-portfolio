@@ -4,13 +4,18 @@ import React from "react";
 import Arushi from "./assets/icon.svg";
 import styles from "../styles/navbar.module.scss";
 
-
 export default function NavBar() {
   return (
     <div className={styles.navContainer}>
       <div>
         <Link href="/">
-        <Image src={Arushi} alt="arushi" width={40} />
+          <div className={styles.imgNav}>
+            <Image
+              src={Arushi}
+              alt="arushi"
+              width={40}
+            />
+          </div>
         </Link>
       </div>
       <div className={styles.navMenu}>

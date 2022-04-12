@@ -1,13 +1,15 @@
 @import "./variables";
 
 .footContainer {
-  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0.4rem 5rem;
   // border-bottom: 1px solid #CECECE;
   box-shadow: 0 4px 30px rgb(0 0 0 / 8%);
+  @include responsive(tablet4) {
+    padding: 0.4rem;
+  }
 
   .footMenu {
     font-family: "League Gothic", sans-serif;
@@ -17,12 +19,16 @@
     justify-content: center;
     align-items: center;
     a {
-      width: 100%;
+      // width: 100%;
       margin: 0;
       letter-spacing: 0.065em;
       color: $dark-text;
       cursor: pointer;
       margin: 0 2rem;
+      @include responsive(tablet4) {
+        margin: 0 0.5rem;
+        font-size: nth($fontSize, 1);
+      }
     }
     h1 {
       font-weight: 400;
@@ -30,12 +36,20 @@
       color: $dark-text;
       font-size: nth($fontSize, 5);
       cursor: pointer;
+      @include responsive(tablet4) {
+        font-size: nth($fontSize, 1);
+      }
     }
     .link {
       color: $dark-text;
       font-size: nth($fontSize, 5);
       cursor: pointer;
-      margin-left:2rem;
+      margin-left: 2rem;
+      @include responsive(tablet4) {
+        margin-left: 0.5rem;
+        font-size: nth($fontSize, 1);
+        
+      }
     }
   }
 }

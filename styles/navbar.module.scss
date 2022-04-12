@@ -8,22 +8,32 @@
   padding: 1.5rem;
   // border-bottom: 1px solid #CECECE;
   box-shadow: 0 4px 30px rgb(0 0 0 / 8%);
+  @include responsive(tablet4) {
+    padding: 1rem;
+  }
+  .imgNav{
+      @include responsive(tablet4) {
+        width: 1.5rem;
+      }
 
-  .navMenu{
-    font-family: 'League Gothic', sans-serif;
+  }
+
+  .navMenu {
+    font-family: "League Gothic", sans-serif;
     font-size: nth($fontSize, 7);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    a{
-      width: 100%;
+    a {
       margin: 0 2rem;
       letter-spacing: 0.065em;
       color: $dark-text;
+      @include responsive(tablet4) {
+        font-size: nth($fontSize, 2);
+      margin: 0 1rem;
 
+      }
     }
   }
-
 }
-

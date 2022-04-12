@@ -75,7 +75,7 @@ export default function Home() {
       </div>
 
       <div className={styles.projContainer} id="projects">
-        <h1>Projects</h1>
+        <h1 className={styles.projContainerHeading}>Projects</h1>
         <div className={styles.projCardController}>
           <ProjectCard
             colorProps={"#E7E2FF"}
@@ -107,7 +107,7 @@ export default function Home() {
       </div>
 
       <div className={styles.workContainer} id="work">
-        <h1>Work Experience</h1>
+        <h1 className={styles.workContainerHeading} >Work Experience</h1>
         <WorkCard
           colorProps={"#E7E2FF"}
           textColorProps={"#9E89FF"}
@@ -192,14 +192,14 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      <div className={styles.travel}>
+      {/* <div className={styles.travel}>
         <h1>To someday having more in this section than 100vw can fit :)</h1>
         <div className={styles.travelIcons}>
           <div className={styles.travelImageWrapper}><Image src={one} /><h6>Andaman</h6></div>
           <div className={styles.travelImageWrapper}><Image src={two}/><h6>Greece</h6></div>
           <div className={styles.travelImageWrapper}><Image src={three}/><h6>Switzerland</h6></div>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
