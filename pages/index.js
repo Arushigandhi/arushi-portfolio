@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Arushi from "./assets/about.jpg";
 import { AiOutlineLinkedin, AiFillInstagram } from "react-icons/ai";
-import { Button, Card } from "antd";
+import { Button, Card, Carousel } from "antd";
 import ProjectCard from "../components/ProjectCard";
 import WorkCard from "../components/WorkCard";
 import Footer from "../components/Footer";
@@ -14,7 +14,7 @@ import Sexedify from "./assets/projects/sexedify.svg";
 import one from "./assets/travel/andaman.png";
 import two from "./assets/travel/greece.png";
 import three from "./assets/travel/switzerland.png";
-
+import CarouselComp from "../components/Carousel";
 
 export default function Home() {
   return (
@@ -39,35 +39,24 @@ export default function Home() {
             in channeling tech for the cause.
           </h2>
           <div className={styles.aboutIcons}>
-            <Link
-              href="https://in.linkedin.com/in/arushi-gandhi"
-            >
+            <Link href="https://in.linkedin.com/in/arushi-gandhi">
               <a target="_blank">
-              <span className={styles.link}>LinkedIn</span>
+                <span className={styles.link}>LinkedIn</span>
               </a>
             </Link>
-            <Link
-              href="https://www.instagram.com/arushi.gandhi/"
-            >
+            <Link href="https://www.instagram.com/arushi.gandhi/">
               <a target="_blank">
-
-              <span className={styles.link}>Instagram</span>
+                <span className={styles.link}>Instagram</span>
               </a>
             </Link>
-            <Link
-              href="https://github.com/Arushigandhi"
-            >
+            <Link href="https://github.com/Arushigandhi">
               <a target="_blank">
-
-              <span className={styles.link}>GitHub</span>
+                <span className={styles.link}>GitHub</span>
               </a>
             </Link>
-            <Link
-              href="/resume.pdf"
-            >
+            <Link href="/resume.pdf">
               <a target="_blank">
-
-              <span className={styles.link}>Resume</span>
+                <span className={styles.link}>Resume</span>
               </a>
             </Link>
           </div>
@@ -84,7 +73,7 @@ export default function Home() {
             description={"A portal to enable reuse of Industrial by-products"}
             link={"/indusby"}
             // image={Sexedify}
-            />
+          />
           <ProjectCard
             colorProps={"#FFD9DE"}
             textColorProps={"#FF8596"}
@@ -107,7 +96,7 @@ export default function Home() {
       </div>
 
       <div className={styles.workContainer} id="work">
-        <h1 className={styles.workContainerHeading} >Work Experience</h1>
+        <h1 className={styles.workContainerHeading}>Work Experience</h1>
         <WorkCard
           colorProps={"#E7E2FF"}
           textColorProps={"#9E89FF"}
@@ -140,6 +129,53 @@ export default function Home() {
         />
       </div>
 
+      <div className={styles.workContainer}>
+        <h1 className={styles.workContainerHeading}>
+          Positions of Responsibilities
+        </h1>
+        <WorkCard
+          colorProps={"#FFD9DE"}
+          textColorProps={"#FF8596"}
+          title={"GirlScript </>"}
+          date={"Co-founder and Development Lead"}
+          description={
+            "Girlscript, Manipal is the chapter we established in our college with the aim of encouraging novices and minorities in tech and to have the confidence to further their knowledge whilst developing a nurturing community. We have conducted various domain bootcamps and workshops from topics ranging from Git & Github, Reactjs and so on. <b>We believe in inclusivity in tech :)</b>"
+          }
+          link={"https://fiedra.com/"}
+        />
+        {/* <CarouselComp /> */}
+      </div>
+      {/* <div className={styles.skillsContainer}>
+        <h1 className={styles.skillsContainerHeading}>Skills</h1>
+        <div className={styles.skillsController}>
+          <div>
+            <div className={styles.skillsItem}>
+              HTML & CSS & SCSS
+              <div className={styles.skillsPill}></div>
+              <div className={styles.skillsPill}></div>
+              <div className={styles.skillsPill}></div>
+              <div className={styles.skillsPill}></div>
+            </div>
+            <div className={styles.skillsItem}>
+              ReactJs & NextJs
+              <div className={styles.skillsPill}></div>
+              <div className={styles.skillsPill}></div>
+              <div className={styles.skillsPill}></div>
+            </div>
+            <div className={styles.skillsItem}>
+              JavaScript
+              <div className={styles.skillsPill}></div>
+              <div className={styles.skillsPill}></div>
+              <div className={styles.skillsPill}></div>
+            </div>
+          </div>
+          <div>
+            <div className={styles.skillsItem}>NodeJs & ExpressJs</div>
+            <div className={styles.skillsItem}>MongoDB</div>
+            <div className={styles.skillsItem}>C++ & Java</div>
+          </div>
+        </div>
+      </div> */}
       {/* <div className={styles.clubContainer}>
         <h1>Positions of Responsibilities</h1>
         <div className={styles.clubCard}>
@@ -192,14 +228,23 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      {/* <div className={styles.travel}>
+      <div className={styles.travel}>
         <h1>To someday having more in this section than 100vw can fit :)</h1>
         <div className={styles.travelIcons}>
-          <div className={styles.travelImageWrapper}><Image src={one} /><h6>Andaman</h6></div>
-          <div className={styles.travelImageWrapper}><Image src={two}/><h6>Greece</h6></div>
-          <div className={styles.travelImageWrapper}><Image src={three}/><h6>Switzerland</h6></div>
+          <div className={styles.travelImageWrapper}>
+            <Image src={one} />
+            <h6>Andaman</h6>
+          </div>
+          <div className={styles.travelImageWrapper}>
+            <Image src={two} />
+            <h6>Greece</h6>
+          </div>
+          <div className={styles.travelImageWrapper}>
+            <Image src={three} />
+            <h6>Switzerland</h6>
+          </div>
         </div>
-      </div> */}
+      </div>
       <Footer />
     </>
   );

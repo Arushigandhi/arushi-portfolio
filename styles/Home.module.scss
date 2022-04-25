@@ -9,8 +9,7 @@
   @include responsive(tablet4) {
     flex-direction: column;
     align-items: center;
-
-    }
+  }
   .aboutImage {
     display: flex;
     flex-direction: column;
@@ -24,8 +23,7 @@
       margin: 2.5rem;
       width: 15rem;
       height: 15rem;
-  
-      }
+    }
   }
 
   .aboutDescription {
@@ -39,7 +37,7 @@
       font-size: nth($fontSize, 6);
       @include responsive(tablet4) {
         font-size: nth($fontSize, 4);
-        }
+      }
     }
     h2 {
       margin-top: 0;
@@ -47,7 +45,7 @@
       font-size: nth($fontSize, 3);
       @include responsive(tablet4) {
         font-size: nth($fontSize, 2);
-        }
+      }
     }
     .aboutIcons {
       margin-top: 1rem;
@@ -59,11 +57,9 @@
       align-items: center;
       width: 60%;
       @include responsive(tablet4) {
-        width: 100% ;
-      justify-content: space-between;
-      margin: auto;
-
-
+        width: 100%;
+        justify-content: space-between;
+        margin: auto;
       }
       .link {
         padding-bottom: 2px;
@@ -88,20 +84,19 @@
     color: $dark-text;
     margin-bottom: 7rem;
     @include responsive(tablet4) {
-      margin-top:18rem;
+      margin-top: 18rem;
       text-align: center;
-    margin-bottom: 0rem;
-    font-size: nth($fontSize, 6);
-      }
+      margin-bottom: 0rem;
+      font-size: nth($fontSize, 6);
+    }
   }
   .projCardController {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     @include responsive(tablet4) {
-    flex-direction: column;
-    align-items: center;
-
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
@@ -116,11 +111,9 @@
     margin: 7rem 0;
     @include responsive(tablet4) {
       text-align: center;
-    font-size: nth($fontSize, 6);
-    margin: 4rem 0;
-
-
-      }
+      font-size: nth($fontSize, 6);
+      margin: 4rem 0;
+    }
   }
 }
 
@@ -192,6 +185,43 @@
   }
 }
 
+.skillsContainer {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 5rem;
+  .skillsContainerHeading {
+    font-size: nth($fontSize, 9);
+    font-weight: 500;
+    color: $dark-text;
+    margin: 4rem 0;
+    @include responsive(tablet4) {
+      text-align: center;
+      font-size: nth($fontSize, 6);
+      margin: 4rem 0;
+    }
+  }
+  .skillsController {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .skillsItem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: nth($fontSize, 5);
+      color: $dark-text;
+      .skillsPill {
+        width: 3.2rem;
+        height: 0.8rem;
+        margin-left: 2.5rem;
+        background-color: $ag-blue;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
 .travel {
   margin: 6rem 0 3rem;
   background-image: url(./travel.png);
@@ -208,25 +238,25 @@
     font-weight: 400;
     color: $dark-text;
     font-style: italic;
-    font-family: 'Poppins';
+    font-family: "Poppins";
   }
-  .travelIcons{
+  .travelIcons {
     display: flex;
     flex-direction: row;
     margin: auto;
-    .travelImageWrapper{
-      width:7rem;
-      height:7rem;
+    .travelImageWrapper {
+      width: 7rem;
+      height: 7rem;
       margin: 5rem;
       border: 3px solid $ag-pink;
       border-radius: 50%;
       padding: 0.3rem;
-      
-      img{
+
+      img {
         border-radius: 50%;
       }
-      h6{
-      font-size: nth($fontSize, 2);
+      h6 {
+        font-size: nth($fontSize, 2);
         font-weight: 400;
         text-align: center;
       }
