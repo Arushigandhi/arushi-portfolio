@@ -15,10 +15,18 @@ import one from "./assets/travel/andaman.png";
 import two from "./assets/travel/greece.png";
 import three from "./assets/travel/switzerland.png";
 import CarouselComp from "../components/Carousel";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Arushi Gandhi | Developer</title>
+        <meta
+          name="description"
+          content="Hey, I'm Arushi Gandhi, a developer who enjoys building products of pertinence. "
+        />
+      </Head>
       <NavBar />
 
       <div className={styles.aboutContainer}>

@@ -6,10 +6,18 @@ import NavBar from "../components/NavBar";
 import styles from "../styles/indusby.module.scss";
 import Indusby from "./assets/projects/indusbyFigma.png";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function svayam() {
   return (
     <>
+      <Head>
+        <title>Arushi Gandhi | Projects</title>
+        <meta
+          name="description"
+          content="Hey, I'm Arushi Gandhi, a developer who enjoys building products of pertinence. "
+        />
+      </Head>
       <NavBar />
       <div className={styles.projContainer}>
         <h1>Indusby</h1>
@@ -43,9 +51,8 @@ export default function svayam() {
               so thatent/contractors can then acquire and make use of.
               <br />
               <br />
-              We developed this project in a span of 24 hours using{" "}
-              Ionic, React and Firebase for the Grand Challenge
-              hackathon.
+              We developed this project in a span of 24 hours using Ionic, React
+              and Firebase for the Grand Challenge hackathon.
             </p>
             <div className={styles.imageWrapper}>
               <Image src={Indusby} alt="" />

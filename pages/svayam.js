@@ -6,10 +6,18 @@ import NavBar from "../components/NavBar";
 import styles from "../styles/svayam.module.scss";
 import Svayam from "./assets/projects/svayamFigma.png";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function svayam() {
   return (
     <>
+      <Head>
+        <title>Arushi Gandhi | Projects</title>
+        <meta
+          name="description"
+          content="Hey, I'm Arushi Gandhi, a developer who enjoys building products of pertinence. "
+        />
+      </Head>
       <NavBar />
       <div className={styles.projContainer}>
         <h1>Svayam</h1>
@@ -35,9 +43,10 @@ export default function svayam() {
               sell their products online. It facilitates an easy and transparent
               process and provides SHGs with the ability to incubate additional
               members.
-              <br/>
-              <br/>
-              We used Nextjs, Nodejs, Express, MongoDB, Mongoose, RazorpayAPI, IPFS to create this application.
+              <br />
+              <br />
+              We used Nextjs, Nodejs, Express, MongoDB, Mongoose, RazorpayAPI,
+              IPFS to create this application.
             </p>
             <div className={styles.imageWrapper}>
               <Image src={Svayam} alt="" />

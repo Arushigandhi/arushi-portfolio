@@ -6,10 +6,18 @@ import NavBar from "../components/NavBar";
 import styles from "../styles/sexedify.module.scss";
 import Sexedify from "./assets/projects/sexedifyFigma.png";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function sexedify() {
   return (
     <>
+      <Head>
+        <title>Arushi Gandhi | Projects</title>
+        <meta
+          name="description"
+          content="Hey, I'm Arushi Gandhi, a developer who enjoys building products of pertinence. "
+        />
+      </Head>
       <NavBar />
       <div className={styles.projContainer}>
         <h1>SexEdify</h1>
