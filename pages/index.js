@@ -39,7 +39,7 @@ export default function Home() {
             accessible, human centered products.
           </h1>
           <h2>
-            I am a sophomore at MIT, Manipal majoring in Information Technology.
+            I am a junior at MIT, Manipal majoring in Information Technology.
             Recipient of the <b>Google Generation Scholarship (APAC) 2022</b>,
             my interests in tech are centered around Application and Web
             Development and any tool that equips me with the ability to create
