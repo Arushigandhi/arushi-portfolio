@@ -40,11 +40,12 @@ export default function Home() {
           </h1>
           <h2>
             I am a junior at MIT, Manipal majoring in Information Technology.
-            Recipient of the <b>Google Generation Scholarship (APAC) 2022</b>,
-            my interests in tech are centered around Application and Web
-            Development and any tool that equips me with the ability to create
-            impactful solutions. I`m a feminist through and through and believe
-            in channeling tech for the cause.
+            Recipient of the <b>Google Generation Scholarship (APAC) 2022</b>{" "}
+            and an <b>Upcoming Intern at Microsoft</b>, my interests in tech are
+            centered around Application and Web Development and any tool that
+            equips me with the ability to create impactful solutions. I`m a
+            feminist through and through and believe in channeling tech for the
+            cause.
           </h2>
           <div className={styles.aboutIcons}>
             <Link href="https://in.linkedin.com/in/arushi-gandhi">
