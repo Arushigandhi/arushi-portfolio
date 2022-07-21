@@ -102,6 +102,38 @@ export default function Home() {
             // image={Svayam}
           />
         </div>
+        <div className={styles.projCardController}>
+          <ProjectCard
+            colorProps={"#FFD9DE"}
+            textColorProps={"#FF8596"}
+            title={"Analysa"}
+            description={
+              "A data analytics platform for the automobile industry"
+            }
+            link={"https://analysa-engage.vercel.app/"}
+            // image={Indusby}
+          />
+          <ProjectCard
+            colorProps={"#DEEDFF"}
+            textColorProps={"#257CE4"}
+            title={"INREM Portal"}
+            description={
+              "An application for the INREM NGO to promote water quality"
+            }
+            link={"https://team-99-inrem.herokuapp.com/"}
+            // image={Svayam}
+          />
+          <ProjectCard
+            colorProps={"#E7E2FF"}
+            textColorProps={"#9E89FF"}
+            title={"Nina"}
+            description={
+              "A women-focussed network promoting investing practices"
+            }
+            link={"/"}
+            // image={Sexedify}
+          />
+        </div>
       </div>
 
       <div className={styles.workContainer} id="work">
@@ -241,15 +273,15 @@ export default function Home() {
         <h1>To someday having more in this section than 100vw can fit :)</h1>
         <div className={styles.travelIcons}>
           <div className={styles.travelImageWrapper}>
-            <Image src={one} />
+            <Image src={one} alt="andaman" />
             <h6>Andaman</h6>
           </div>
           <div className={styles.travelImageWrapper}>
-            <Image src={two} />
+            <Image src={two} alt="greece" />
             <h6>Greece</h6>
           </div>
           <div className={styles.travelImageWrapper}>
-            <Image src={three} />
+            <Image src={three} alt="swiss" />
             <h6>Switzerland</h6>
           </div>
         </div>
