@@ -39,13 +39,13 @@ export default function Home() {
             accessible, human centered products.
           </h1>
           <h2>
-            I am a junior at MIT, Manipal majoring in Information Technology.
-            Recipient of the <b>Google Generation Scholarship (APAC) 2022</b>{" "}
-            and an <b>Upcoming Intern at Microsoft</b>, my interests in tech are
-            centered around Application and Web Development and any tool that
-            equips me with the ability to create impactful solutions. I`m a
-            feminist through and through and believe in channeling tech for the
-            cause.
+            I am an engineering undergrad at MIT, Manipal majoring in
+            Information Technology. Recipient of the{" "}
+            <b>Google Generation Scholarship (APAC) 2022</b> and an{" "}
+            <b>Upcoming Intern at Microsoft</b>, I've worked as a full-stack web
+            developer at various early-stage start-ups including BugBase,
+            Incepthink, and Fiedra. I`m a feminist through and through and
+            believe in channeling tech for the cause.
           </h2>
           <div className={styles.aboutIcons}>
             <Link href="https://in.linkedin.com/in/arushi-gandhi">
