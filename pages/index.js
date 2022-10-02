@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className={styles.aboutDescription}>
           <h1>
-            Hey, I’m Arushi Gandhi and I am a developer focused on building
+            Hey, I’m Arushi Gandhi and I aOngm a developer focused on building
             accessible, human centered products.
           </h1>
           <h2>
@@ -152,7 +152,7 @@ export default function Home() {
           colorProps={"#FFD9DE"}
           textColorProps={"#FF8596"}
           title={"Incepthink"}
-          date={"Web Development Intern (Feb 2022 - Ongoing)"}
+          date={"Web Development Intern (Feb 2022 - May 2022)"}
           description={
             "Incepthink works towards redefining the limits of blockchain to add utility to the world of NFTs through exisiting and upcoming projects. I worked on contributing to different projects under the Incepthink umbrella and developed the company website which has an integrated <b>NFT Minter</b> and blogs, using <b>Next.js</b>, <b>Ethers.js</b>, <b>IPFS</b> and <b>Ghost Content API</b>."
           }
@@ -162,7 +162,7 @@ export default function Home() {
           colorProps={"#DEEDFF"}
           textColorProps={"#257CE4"}
           title={"BugBase"}
-          date={"Project Manager (Dec 2021 - Ongoing)"}
+          date={"Project Manager (Dec 2021 - Sep 2022)"}
           description={
             "BugBase is a managed marketplace of ethical hackers which facilitates startups and enterprises to setup bug bounty programs. I am responsible for the day-to-day functioning of the various departments in the company and efficient communication between them. I have also contributed towards migrating the codebase from <b>React</b> to <b>Next.js</b>."
           }
