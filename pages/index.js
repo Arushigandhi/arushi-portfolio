@@ -35,14 +35,14 @@ export default function Home() {
         </div>
         <div className={styles.aboutDescription}>
           <h1>
-            Hey, I’m Arushi Gandhi and I aOngm a developer focused on building
+            Hey, I`m Arushi Gandhi and I aOngm a developer focused on building
             accessible, human centered products.
           </h1>
           <h2>
             I am an engineering undergrad at MIT, Manipal majoring in
             Information Technology. Recipient of the{" "}
             <b>Google Generation Scholarship (APAC) 2022</b> and an{" "}
-            <b>Upcoming Intern at Microsoft</b>, I've worked as a full-stack web
+            <b>Upcoming Intern at Microsoft</b>, I`ve worked as a full-stack web
             developer at various early-stage start-ups including BugBase,
             Incepthink, and Fiedra. I`m a feminist through and through and
             believe in channeling tech for the cause.
