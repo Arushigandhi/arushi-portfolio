@@ -19,7 +19,7 @@ export default function love() {
           <h2>
             I love you. And I really miss you stupid bitch. You are my favourite
             person on earth and I could talk to you for 7 janam , round figure,
-            still won't be enough. Meet me asap. (I shall update this easter egg
+            still won`t be enough. Meet me asap. (I shall update this easter egg
             section soon.)
           </h2>
         </div>
