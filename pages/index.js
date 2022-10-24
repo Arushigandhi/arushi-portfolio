@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className={styles.aboutDescription}>
           <h1>
-            Hey, I`m Arushi Gandhi and I aOngm a developer focused on building
+            Hey, I`m Arushi Gandhi and I am a developer focused on building
             accessible, human centered products.
           </h1>
           <h2>
