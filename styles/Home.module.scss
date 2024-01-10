@@ -90,10 +90,10 @@
   width: 75%;
   margin: auto;
   .projContainerHeading {
-    font-size: nth($fontSize, 9);
+    font-size: nth($fontSize, 7);
     font-weight: 500;
     color: $dark-text;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     @include responsive(tablet4) {
       margin-top: 18rem;
       text-align: center;
@@ -116,7 +116,7 @@
   width: 75%;
   margin: auto;
   .workContainerHeading {
-    font-size: nth($fontSize, 9);
+    font-size: nth($fontSize, 7);
     font-weight: 500;
     color: $dark-text;
     margin: 7rem 0;

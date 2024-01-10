@@ -31,7 +31,7 @@ export default function Home() {
 
       <div className={styles.aboutContainer}>
         <div className={styles.aboutImage}>
-          <Image src={Arushi} alt="arushi" width={1800} height={1800} />
+          <Image src="/arushi.jpeg" alt="arushi" width={1800} height={1800} />
         </div>
         <div className={styles.aboutDescription}>
           <h1>
@@ -42,10 +42,13 @@ export default function Home() {
             I am an engineering undergrad at MIT, Manipal majoring in
             Information Technology. Recipient of the{" "}
             <b>Google Generation Scholarship (APAC) 2022</b> and an{" "}
-            <b>Upcoming Intern at Microsoft</b>, I`ve worked as a full-stack web
-            developer at various early-stage start-ups including BugBase,
-            Incepthink, and Fiedra. I`m a feminist through and through and
-            believe in channeling tech for the cause.
+            <b>Summer Intern at Microsoft 2023</b>, I`ve worked as a full-stack
+            web developer/freelancer at various early-stage start-ups including
+            BugBase, FreeStand.
+            <br />
+            <br />
+            I`m a feminist through and through and believe in channeling tech
+            for the cause.
           </h2>
           <div className={styles.aboutIcons}>
             <Link href="https://in.linkedin.com/in/arushi-gandhi">
@@ -168,6 +171,26 @@ export default function Home() {
           }
           link={"https://bugbase.in/"}
         />
+        <WorkCard
+          colorProps={"#E7E2FF"}
+          textColorProps={"#9E89FF"}
+          title={"FreeStand"}
+          date={"Full Stack Development Intern (Sept 2022 - Feb 2023)"}
+          description={
+            "FreeStand's platform makes it delightfully simple to launch, scale, monitor, and manage your Product Sampling Campaigns"
+          }
+          link={"https://freestand.in/"}
+        />
+        <WorkCard
+          colorProps={"#FFD9DE"}
+          textColorProps={"#FF8596"}
+          title={"Microsoft"}
+          date={"SWE Intern (June 2023 - July 2023)"}
+          description={
+            "To empower every person and every organization to achieve more."
+          }
+          link={"https://www.microsoft.com/en-in"}
+        />
       </div>
 
       <div className={styles.workContainer}>
@@ -178,11 +201,33 @@ export default function Home() {
           colorProps={"#FFD9DE"}
           textColorProps={"#FF8596"}
           title={"GirlScript </>"}
-          date={"Co-founder and Development Lead"}
+          date={"Founding Team and Development Lead"}
           description={
             "Girlscript, Manipal is the chapter we established in our college with the aim of encouraging novices and minorities in tech and to have the confidence to further their knowledge whilst developing a nurturing community. We have conducted various domain bootcamps and workshops from topics ranging from Git & Github, Reactjs and so on. <b>We believe in inclusivity in tech :)</b>"
           }
-          link={"https://fiedra.com/"}
+          link={"/"}
+        />
+        <WorkCard
+          colorProps={"#E7E2FF"}
+          textColorProps={"#9E89FF"}
+          title={"Dorm Room Startup Club"}
+          date={"Co-founder"}
+          description={
+            "Dorm Room Startup Club is a community initiative aimed at bringing together student entrepreneurs across India to foster entrepreneurship at early levels. Led by Arushi Gandhi and Shrey Modi, this club aims to create a platform where like-minded individuals can connect, collaborate, and support each other in their entrepreneurial journeys. "
+          }
+          link={
+            "https://www.notion.so/arushigandhi/Dorm-Room-Startup-Club-77aaefe4979d4ac58b53f98af56a8e98"
+          }
+        />
+        <WorkCard
+          colorProps={"#DEEDFF"}
+          textColorProps={"#257CE4"}
+          title={"Fundinc"}
+          date={"Founder"}
+          description={
+            "Fundinc is an AI powered software to help investment teams in conducting their business, smooother."
+          }
+          link={"https://fundinc.in/"}
         />
         {/* <CarouselComp /> */}
       </div>
