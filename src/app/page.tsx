@@ -20,7 +20,7 @@ export default function Home() {
           <img src={"/8.png"} alt="arushi" style={{ width: "192px", height: "108px" }}/>
           <h1>About Me</h1>
           <p>
-            Hi, I'm <b>Arushi Gandhi</b>. I&apos;m the founder and CEO of <b>Ressl AI</b>, where we&apos;re building AI agents for Salesforce customisation and deployment.
+            Hi, I&apos;m <b>Arushi Gandhi</b>. I&apos;m the founder and CEO of <b>Ressl AI</b>, where we&apos;re building AI agents for Salesforce customisation and deployment.
             <></>
             I split my time between San Francisco and Bangalore.
           </p>
