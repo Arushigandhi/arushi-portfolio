@@ -20,14 +20,15 @@ export default function Home() {
           <img src={"/8.png"} alt="arushi" style={{ width: "192px", height: "108px" }}/>
           <h1>About Me</h1>
           <p>
-            Hi, I'm <b>Arushi Gandhi</b>. I'm the founder and CEO of <b>Ressl AI</b>, where we're building AI agents for Salesforce customisation and deployment.<br /><br />
+            Hi, I'm <b>Arushi Gandhi</b>. I&apos;m the founder and CEO of <b>Ressl AI</b>, where we&apos;re building AI agents for Salesforce customisation and deployment.
+            <></>
             I split my time between San Francisco and Bangalore.
           </p>
         </div>
       </div>
 
       <div style={{ marginTop: "3rem" }}>
-        <h2>Places I've Worked At</h2>
+        <h2>Places I&apos;ve Worked At</h2>
         <ul>
           <li>
             <b>Fiedra</b> – Frontend Development Intern (Oct 2021 - Jan 2022)
@@ -87,9 +88,9 @@ export default function Home() {
       </div>
 
       <div style={{ marginTop: "3rem" }}>
-        <h2>Places I've Visited</h2>
+        <h2>Places I&apos;ve Visited</h2>
         <p>
-          I love travelling and exploring new places. Here are a few places I've been to:
+          I love travelling and exploring new places. Here are a few places I&apos;ve been to:
         </p>
         <div>
           <div>
