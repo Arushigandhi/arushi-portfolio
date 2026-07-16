@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Assuming every company only has so many tokens to expend (just like they had only so many human labourers to expend, of course they could hire more, just like they can get more tokens, but that comes with a cost, not just mentors but also from a POV of bloat, managerial overhead, etc.)",
+        text: "Assuming every company only has so many tokens to expend (just like they had only so many human labourers to expend, of course they could hire more, just like they can get more tokens, but that comes with a cost, not just monetary but also from a POV of bloat, managerial overhead, etc.)",
       },
       {
         type: "paragraph",
