@@ -18,6 +18,15 @@ export default function Home() {
         </p>
         <p>Backed by YC W26</p>
         <p>San Francisco, US / Bangalore, IN</p>
+        <p>
+          <a href="https://www.linkedin.com/in/arushi-gandhi">Linkedin</a>
+          {" / "}
+          <a href="mailto:arushi.gandhi@gmail.com">Email</a>
+          {" / "}
+          <a href="https://x.com/arushi_ressl">X</a>
+          {" / "}
+          <a href="https://www.instagram.com/arushi.gandhi">Instagram</a>
+        </p>
       </div>
 
       <div style={{ marginTop: "3rem" }}>
