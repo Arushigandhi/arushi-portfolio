@@ -42,7 +42,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "As for vendors, there is now a lot of value in choosing which problems to work on. Optimise how good your token is at achieving the same results as if your customer did it themselves. I suppose I also mean be more token-efficient for higher-quality output. And this also producing reusable / recyclable work, so that your cost of tokens is spread across more customers and services. The ROI of each token spent should be maximised.",
+        text: "As for vendors, there is now a lot of value in choosing which problems to work on. Optimise how good your token is at achieving the same results than if your customers did it themselves. I suppose I also mean be more token-efficient for higher-quality output. And this also means producing reusable / recyclable work, so that your cost of tokens is spread across more customers and services. The ROI of each token spent should be maximised.",
       },
       {
         type: "paragraph",
