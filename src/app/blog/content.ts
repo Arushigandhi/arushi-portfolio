@@ -8,11 +8,54 @@ export type BlogBlock =
       items: string[];
     };
 
-export const blogPost: {
+export type BlogPost = {
+  id: string;
   title: string;
-  href: string;
+  href?: string;
   content: BlogBlock[];
-} = {
+};
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: "yeh-tokens-mujhe-de-de-thakur",
+    title: "Yeh tokens mujhe de de thakur",
+    content: [
+      {
+        type: "paragraph",
+        text: "Do not want to be one of those. But something changed inside of me the first time I put Codex on a goal, went to sleep, and woke up to work that was done, work that would have taken me a few days to finish.",
+      },
+      {
+        type: "paragraph",
+        text: "Now, I'm not an AGI doomer and I never will be. I want to write down how I think about the future of work. B2B is the only world I understand, so let's just talk about that. We've always taken human labour and converted it into capital. Now that all of that is being absorbed into tokens, not that much changes. There's always going to be prioritisation of work.",
+      },
+      {
+        type: "paragraph",
+        text: "Assuming every company only has so many tokens to expend (just like they had only so many human labourers to expend, of course they could hire more, just like they can get more tokens, but that comes with a cost, not just mentors but also from a POV of bloat, managerial overhead, etc.)",
+      },
+      {
+        type: "paragraph",
+        text: "Now, why would a company choose to expend those tokens on non-crucial workloads, anything that is not advancing their business, especially because those very tokens are being used by their competitors to advance every single day? It’d be criminal for them not to take every single token they can get and point it towards the advancement of their biz. So hypothetically, even if they do get more tokens, because a lot of their barriers, which were barriers of humans being humans, are now gone, those should be spent towards acquiring more customers, servicing their customers, expanding their product and business, etc.",
+      },
+      {
+        type: "paragraph",
+        text: "Not at rebuilding things they could be using vendors for. Not expend tokens at something they can borrow for from vendors. Every potential usage of tokens will be prioritised, and everything that is not high on the list should be borrowed tokens, not used ones.",
+      },
+      {
+        type: "paragraph",
+        text: "As for vendors, there is now a lot of value in choosing which problems to work on. Optimise how good your token is at achieving the same results as if your customer did it themselves. I suppose I also mean be more token-efficient for higher-quality output. And this also producing reusable / recyclable work, so that your cost of tokens is spread across more customers and services. The ROI of each token spent should be maximised.",
+      },
+      {
+        type: "paragraph",
+        text: "Finally, vendors should also aim to maximise the LTV of their token's output for more return on investment.",
+      },
+      {
+        type: "paragraph",
+        text: "The more I think about it, none of this is different from the world pre-AI. It's just a lot, lot, lot more accelerated. I could replace tokens with humans and it would alll still make sense so I think the kids are going to be okay.",
+      },
+    ],
+  },
+  {
+    id: "why-building-on-sors-sucks",
   title: "Why building on SORs sucks",
   href: "https://x.com/arushi_ressl/status/2020943617079247226?s=20",
   content: [
@@ -114,4 +157,5 @@ We had closed this SV darling customer in <5 days. And, it wasn’t a small ACV 
       ],
     },
   ],
-};
+  },
+];

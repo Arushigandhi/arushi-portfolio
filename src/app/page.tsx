@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { blogPost } from "./blog/content";
+import { blogPosts } from "./blog/content";
 
 export default function Home() {
   return (
@@ -22,9 +22,13 @@ export default function Home() {
 
       <div style={{ marginTop: "3rem" }}>
         <h2>Blog</h2>
-        <h3>
-          <Link href="/blog">{blogPost.title}</Link>
-        </h3>
+        <ul>
+          {blogPosts.map((post) => (
+            <li key={post.id}>
+              <Link href={`/blog#${post.id}`}>{post.title}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div style={{ marginTop: "3rem" }}>
@@ -37,7 +41,7 @@ export default function Home() {
             <b>Incepthink</b> – Web Development Intern (Feb 2022 - May 2022)
           </li>
           <li>
-            <b>BugBase</b> – Project Manager (Dec 2021 - Sep 2022)
+            <b>BugBase</b> – Founder&apos;s Office Intern (Dec 2021 - Sep 2022)
           </li>
           <li>
             <b>FreeStand</b> – Full Stack Development Intern (Sept 2022 - Feb
