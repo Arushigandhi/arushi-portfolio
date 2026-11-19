@@ -6,7 +6,7 @@ const places: { name: string; photo?: string }[] = [
   { name: "Andaman", photo: "/assets/travel/andaman.png" },
   { name: "Greece", photo: "/assets/travel/greece.png" },
   { name: "Switzerland", photo: "/assets/travel/switzerland.png" },
-  { name: "Paris" },
+  { name: "Paris", photo: "/assets/travel/paris.jpg" },
   { name: "London" },
   { name: "New York", photo: "/assets/travel/new-york.jpg" },
   { name: "Amsterdam" },
