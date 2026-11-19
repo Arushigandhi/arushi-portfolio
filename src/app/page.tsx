@@ -25,8 +25,8 @@ export default function Home() {
           className="portrait"
           src="/arushi-speaking.jpg"
           alt="Arushi Gandhi"
-          width={88}
-          height={88}
+          width={80}
+          height={80}
           priority
         />
         <h1>Arushi Gandhi</h1>
@@ -111,9 +111,9 @@ export default function Home() {
               <Image
                 src={place.photo}
                 alt={`A travel photo from ${place.name}`}
-                width={144}
-                height={144}
-                sizes="(max-width: 600px) 30vw, 144px"
+                width={128}
+                height={128}
+                sizes="(max-width: 600px) min(128px, calc((100vw - 88px) / 3)), 128px"
               />
               <figcaption>{place.name}</figcaption>
             </figure>
