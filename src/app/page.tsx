@@ -8,7 +8,7 @@ const places: { name: string; photo?: string }[] = [
   { name: "Switzerland", photo: "/assets/travel/switzerland.png" },
   { name: "Paris" },
   { name: "London" },
-  { name: "United States" },
+  { name: "New York", photo: "/assets/travel/new-york.jpg" },
   { name: "Amsterdam" },
   { name: "Belgium" },
   { name: "Japan" },
