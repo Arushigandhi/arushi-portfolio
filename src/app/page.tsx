@@ -14,6 +14,7 @@ const places: { name: string; photo?: string }[] = [
   { name: "Belgium", photo: "/assets/travel/belgium.jpg" },
   { name: "Japan", photo: "/assets/travel/japan.jpg" },
   { name: "Bali", photo: "/assets/travel/bali.jpg" },
+  { name: "Goa", photo: "/assets/travel/goa.jpg" },
 ];
 
 export default function Home() {
