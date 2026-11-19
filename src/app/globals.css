@@ -118,7 +118,7 @@ figcaption {
 
 .travel-photos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 128px));
+  grid-template-columns: repeat(auto-fill, minmax(90px, 112px));
   gap: 20px 16px;
 }
 
@@ -189,8 +189,8 @@ figcaption {
 
   .travel-photos {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: calc(100% - 24px);
-    max-width: 408px;
+    width: calc(100% - 48px);
+    max-width: 360px;
     gap: 16px 12px;
   }
 }
