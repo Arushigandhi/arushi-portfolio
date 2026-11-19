@@ -2,174 +2,125 @@ import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "./blog/content";
 
+const places: { name: string; photo?: string }[] = [
+  { name: "Andaman", photo: "/assets/travel/andaman.png" },
+  { name: "Greece", photo: "/assets/travel/greece.png" },
+  { name: "Switzerland", photo: "/assets/travel/switzerland.png" },
+  { name: "Paris" },
+  { name: "London" },
+  { name: "United States" },
+  { name: "Amsterdam" },
+  { name: "Belgium" },
+  { name: "Japan" },
+  { name: "Bali" },
+];
+
 export default function Home() {
   return (
-    <div style={{ width: "70%", margin: "auto" }}>
-      <div style={{ marginTop: "2rem" }}>
+    <main className="page">
+      <header className="intro">
         <Image
+          className="portrait"
           src="/arushi.jpeg"
           alt="Arushi Gandhi"
-          width={100}
-          height={100}
+          width={88}
+          height={88}
+          priority
         />
         <h1>Arushi Gandhi</h1>
         <p>
-          <b>CEO and Co-founder of Ressl AI</b>
+          Co-founder and CEO at <b>Newmeasure</b> (formerly Ressl). YC W26.
         </p>
-        <p>Backed by YC W26</p>
-        <p>San Francisco, US / Bangalore, IN</p>
-        <p>
-          <a href="https://www.linkedin.com/in/arushi-gandhi">Linkedin</a>
-          {" / "}
-          <a href="mailto:arushi.gandhi@gmail.com">Email</a>
-          {" / "}
-          <a href="https://x.com/arushi_ressl">X</a>
-          {" / "}
-          <a href="https://www.instagram.com/arushi.gandhi">Instagram</a>
-        </p>
-      </div>
+        <p className="muted">Splitting my time between San Francisco and Bangalore.</p>
+        <nav aria-label="Find me online">
+          <ul className="social-links">
+            <li><a href="https://www.linkedin.com/in/arushi-gandhi">LinkedIn</a></li>
+            <li><a href="mailto:arushi.gandhi@gmail.com">Email</a></li>
+            <li><a href="https://x.com/arushi_ressl">X</a></li>
+            <li><a href="https://github.com/Arushigandhi">GitHub</a></li>
+            <li><a href="https://www.instagram.com/arushi.gandhi">Instagram</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <div style={{ marginTop: "3rem" }}>
-        <h2>Blog</h2>
-        <ul>
+      <section aria-labelledby="writing">
+        <h2 id="writing">Writing</h2>
+        <ul className="writing-list">
           {blogPosts.map((post) => (
             <li key={post.id}>
               <Link href={`/blog#${post.id}`}>{post.title}</Link>
             </li>
           ))}
         </ul>
-      </div>
+      </section>
 
-      <div style={{ marginTop: "3rem" }}>
-        <h2>Places I&apos;ve Worked At</h2>
-        <ul>
+      <section aria-labelledby="work">
+        <h2 id="work">Places I&apos;ve worked</h2>
+        <ul className="experience-list">
           <li>
-            <b>Fiedra</b> – Frontend Development Intern (Oct 2021 - Jan 2022)
+            <div><b>Microsoft</b> — SWE Intern</div>
+            <span className="dates">Jun – Jul 2023</span>
           </li>
           <li>
-            <b>Incepthink</b> – Web Development Intern (Feb 2022 - May 2022)
+            <div><b>FreeStand</b> — Full Stack Development Intern</div>
+            <span className="dates">Sep 2022 – Feb 2023</span>
           </li>
           <li>
-            <b>BugBase</b> – Founder&apos;s Office Intern (Dec 2021 - Sep 2022)
+            <div><b>BugBase</b> — Founder&apos;s Office Intern</div>
+            <span className="dates">Dec 2021 – Sep 2022</span>
           </li>
           <li>
-            <b>FreeStand</b> – Full Stack Development Intern (Sept 2022 - Feb
-            2023)
+            <div><b>Incepthink</b> — Web Development Intern</div>
+            <span className="dates">Feb – May 2022</span>
           </li>
           <li>
-            <b>Microsoft</b> – SWE Intern (June 2023 - July 2023)
+            <div><b>Fiedra</b> — Frontend Development Intern</div>
+            <span className="dates">Oct 2021 – Jan 2022</span>
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div style={{ marginTop: "3rem" }}>
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <b>Indusby</b>: A portal to enable reuse of industrial by-products
-          </li>
-          <li>
-            <b>SexEdify</b>: A haven for safe learning and conversation about
-            sex-ed
-          </li>
-          <li>
-            <b>Svayam</b>: An ecommerce portal for Self-help groups
-          </li>
-          <li>
-            <b>Analysa</b>: A data analytics platform for the automobile
-            industry
-          </li>
-          <li>
-            <b>INREM Portal</b>: An application for the INREM NGO to promote
-            water quality
-          </li>
-          <li>
-            <b>Nina</b>: A women-focussed network promoting investing practices
-          </li>
+      <section aria-labelledby="projects">
+        <h2 id="projects">Things I&apos;ve built</h2>
+        <ul className="plain-list">
+          <li><b>Indusby</b> — A portal to enable reuse of industrial by-products.</li>
+          <li><b>SexEdify</b> — A haven for safe learning and conversation about sex-ed.</li>
+          <li><b>Svayam</b> — An ecommerce portal for self-help groups.</li>
+          <li><b>Analysa</b> — A data analytics platform for the automobile industry.</li>
+          <li><b>INREM Portal</b> — An application for the INREM NGO to promote water quality.</li>
+          <li><b>Nina</b> — A women-focused network promoting investing practices.</li>
         </ul>
-      </div>
+      </section>
 
-      <div style={{ marginTop: "3rem" }}>
-        <h2>Positions of Responsibility</h2>
-        <ul>
-          <li>
-            <b>GirlScript &lt;/&gt;</b> – Founding Team and Development Lead
-          </li>
-          <li>
-            <b>Dorm Room Startup Club</b> – Co-founder
-          </li>
-          <li>
-            <b>Fundinc</b> – Founder
-          </li>
+      <section aria-labelledby="community">
+        <h2 id="community">A few other things</h2>
+        <ul className="plain-list">
+          <li><b>GirlScript &lt;/&gt;</b> — Founding Team and Development Lead.</li>
+          <li><b>Dorm Room Startup Club</b> — Co-founder.</li>
+          <li><b>Fundinc</b> — Founder.</li>
         </ul>
-      </div>
+      </section>
 
-      <div style={{ marginTop: "3rem" }}>
-        <h2>Places I&apos;ve Visited</h2>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "flex-start",
-            gap: "0.75rem",
-            flexWrap: "wrap",
-          }}
-        >
-          <div style={{ width: "72px" }}>
-            <Image
-              src="/assets/travel/andaman.png"
-              alt="Andaman"
-              width={72}
-              height={72}
-            />
-            <h3 style={{ fontSize: "1rem", margin: "0.4rem 0 0" }}>
-              Andaman
-            </h3>
-          </div>
-          <div style={{ width: "72px" }}>
-            <Image
-              src="/assets/travel/greece.png"
-              alt="Greece"
-              width={72}
-              height={72}
-            />
-            <h3 style={{ fontSize: "1rem", margin: "0.4rem 0 0" }}>
-              Greece
-            </h3>
-          </div>
-          <div style={{ width: "88px" }}>
-            <Image
-              src="/assets/travel/switzerland.png"
-              alt="Switzerland"
-              width={72}
-              height={72}
-            />
-            <h3 style={{ fontSize: "1rem", margin: "0.4rem 0 0" }}>
-              Switzerland
-            </h3>
-          </div>
-          <div style={{ width: "72px" }}>
-            <h3 style={{ fontSize: "1rem", margin: 0 }}>Paris</h3>
-          </div>
-          <div style={{ width: "72px" }}>
-            <h3 style={{ fontSize: "1rem", margin: 0 }}>London</h3>
-          </div>
-          <div style={{ width: "88px" }}>
-            <h3 style={{ fontSize: "1rem", margin: 0 }}>United States</h3>
-          </div>
-          <div style={{ width: "88px" }}>
-            <h3 style={{ fontSize: "1rem", margin: 0 }}>Amsterdam</h3>
-          </div>
-          <div style={{ width: "72px" }}>
-            <h3 style={{ fontSize: "1rem", margin: 0 }}>Belgium</h3>
-          </div>
-          <div style={{ width: "72px" }}>
-            <h3 style={{ fontSize: "1rem", margin: 0 }}>Japan</h3>
-          </div>
-          <div style={{ width: "72px" }}>
-            <h3 style={{ fontSize: "1rem", margin: 0 }}>Bali</h3>
-          </div>
+      <section aria-labelledby="travel">
+        <h2 id="travel">Places I&apos;ve visited</h2>
+        <div className="travel-photos">
+          {places.map((place) => place.photo ? (
+            <figure key={place.name}>
+              <Image
+                src={place.photo}
+                alt={`A travel photo from ${place.name}`}
+                width={144}
+                height={144}
+                sizes="(max-width: 600px) 30vw, 144px"
+              />
+              <figcaption>{place.name}</figcaption>
+            </figure>
+          ) : null)}
         </div>
-      </div>
-    </div>
+        <p className="other-places">
+          Also: {places.filter((place) => !place.photo).map((place) => place.name).join(", ")}.
+        </p>
+      </section>
+    </main>
   );
 }
