@@ -11,7 +11,7 @@ const places: { name: string; photo?: string }[] = [
   { name: "New York", photo: "/assets/travel/new-york.jpg" },
   { name: "Amsterdam", photo: "/assets/travel/amsterdam.jpg" },
   { name: "Belgium", photo: "/assets/travel/belgium.jpg" },
-  { name: "Japan" },
+  { name: "Japan", photo: "/assets/travel/japan.jpg" },
   { name: "Bali", photo: "/assets/travel/bali.jpg" },
 ];
 
@@ -117,9 +117,11 @@ export default function Home() {
             </figure>
           ) : null)}
         </div>
-        <p className="other-places">
-          Also: {places.filter((place) => !place.photo).map((place) => place.name).join(", ")}.
-        </p>
+        {places.some((place) => !place.photo) && (
+          <p className="other-places">
+            Also: {places.filter((place) => !place.photo).map((place) => place.name).join(", ")}.
+          </p>
+        )}
       </section>
     </main>
   );
