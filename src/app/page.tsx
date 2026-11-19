@@ -12,7 +12,7 @@ const places: { name: string; photo?: string }[] = [
   { name: "Amsterdam" },
   { name: "Belgium" },
   { name: "Japan" },
-  { name: "Bali" },
+  { name: "Bali", photo: "/assets/travel/bali.jpg" },
 ];
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
         />
         <h1>Arushi Gandhi</h1>
         <p>
-          Co-founder and CEO at <b>Newmeasure</b> (formerly Ressl). YC W26.
+          Co-founder and CEO at <a href="https://newmeasure.ai"><b>Newmeasure</b></a> (formerly Ressl). YC W26.
         </p>
         <p className="muted">Splitting my time between San Francisco and Bangalore.</p>
         <nav aria-label="Find me online">
